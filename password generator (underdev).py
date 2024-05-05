@@ -1,7 +1,12 @@
 while True:
 	import random
-	lower = "abcdefghijklmnopqrstuvwxyz"
-	upper = lower.upper()
+	import string
+	lower_list=list(string.ascii_lowercase)
+	lower="".join(lower_list)
+	upper_list=list(string.ascii_uppercase)
+	upper="".join(upper_list)
+	#lower = "abcdefghijklmnopqrstuvwxyz"
+	#upper = lower.upper()
 	digits="123456789"
 	symbols="@*-_~"
 	print("password generator")
